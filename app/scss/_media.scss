@@ -4,6 +4,12 @@
             width: 100%;
         }
     }
+    .menu{
+        &__list-item{
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
 }    
 @media (max-width: 1366px){
     .collection{
@@ -120,11 +126,9 @@
         display: none;
     }
     .menu{
-        padding-right: 0;
-        &__list-item + &__list-item{
-            padding-right: 0;
+        &__list-item{
+            padding-left: 0!important;
         }
-
     }
     .logo{
         margin: 0 auto;
@@ -264,6 +268,11 @@
    .aside__search{
        width: 100%;
    }
+   .menu{
+       &__list-item{
+           padding-left: 0!important;
+       }
+   }
 }
 @media(max-width:540px){
      .menu__list-link--active::after{
@@ -329,7 +338,7 @@
             display: block;
         }
         &__list-item{
-            padding: 10px 0;
+            padding: 0;
         }
         &__link-link{
             display: block;
@@ -431,6 +440,11 @@
         }
         &__reply{
             margin-left: 0;
+        }
+    }
+    .menu{
+        &__list-item{
+            padding-left: 0;
         }
     }
 }
